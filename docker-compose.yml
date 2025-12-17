@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:16
+    container_name: quanthum-db
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: quanthum
+    ports:
+      - '5432:5432'
+    volumes:
+      - quanthum_pgdata:/var/lib/postgresql/data
+
+volumes:
+  quanthum_pgdata:
