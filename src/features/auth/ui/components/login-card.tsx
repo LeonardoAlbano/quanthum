@@ -12,7 +12,7 @@ import { Label } from '@/components/ui/label';
 import { Separator } from '@/components/ui/separator';
 import { Skeleton } from '@/components/ui/skeleton';
 
-import { PasswordField } from '@/features/auth/ui/components/passsword-field';
+import { PasswordField } from '@/features/auth/ui/components/password-field';
 
 export function LoginCard() {
   const [loadingGithub, setLoadingGithub] = useState(false);
